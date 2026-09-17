@@ -1,0 +1,26 @@
+@model List<BudgetBuddy.Models.Transaction>
+
+<h1>Budget Buddy</h1>
+
+<p>
+    <a href="/Budget/Add">Add Transaction</a>
+</p>
+
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Amount</th>
+        <th>Type</th>
+        <th>Date</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Amount</td>
+            <td>@item.Type</td>
+            <td>@item.Date</td>
+        </tr>
+    }
+</table>

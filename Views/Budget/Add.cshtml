@@ -1,0 +1,24 @@
+@model BudgetBuddy.Models.Transaction
+
+<h1>Add Transaction</h1>
+
+<form method="post">
+
+    <p>
+        <input name="Title" placeholder="Title" />
+    </p>
+
+    <p>
+        <input name="Amount" placeholder="Amount" />
+    </p>
+
+    <p>
+        <select name="Type">
+            <option>Income</option>
+            <option>Expense</option>
+        </select>
+    </p>
+
+    <button type="submit">Save</button>
+
+</form>
